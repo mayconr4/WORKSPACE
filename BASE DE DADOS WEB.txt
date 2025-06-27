@@ -1,0 +1,28 @@
+CREATE DATABASE banco CHARSET utf8mb4;
+
+
+USE banco;
+
+CREATE TABLE filmes(
+codigo INTEGER PRIMARY KEY AUTO_INCREMENT,
+titulo varchar(35) not null,
+genero varchar(8) not null,
+produtora varchar(15),
+dataCompra date
+ ); 
+INSERT INTO filmes (titulo, genero, produtora, dataCompra) VALUES
+('O Senhor dos Anéis', 'Aventura', 'New Line', '2001-12-19'),
+('Matrix', 'Ficção', 'Warner B.', '1999-03-31'),
+('Vingadores', 'Ação', 'Marvel S.', '2012-04-25'),
+('O Rei Leão', 'Animação', 'Walt Disn.', '1994-06-24'),
+('Gladiador', 'Drama', 'Univ. Pics', '2000-05-05'),
+('Jurassic Park', 'Ficção', 'Univ. Pics', '1993-06-11'),
+('Forrest Gump', 'Drama', 'Paramount', '1994-07-06'),
+('Pulp Fiction', 'Crime', 'Miramax', '1994-10-14'); 
+
+SELECT * FROM filmes;
+
+
+
+
+ 
